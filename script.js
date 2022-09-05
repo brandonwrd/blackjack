@@ -55,14 +55,14 @@ function fullDeck () {
 
 // function to shuffle deck of cards
 
-// function shuffleCards () {
-//     for (let i = 0; i < 250; i++) { // should console anything put in the console log should times
-//         // let randomCards = Math.floor(Math.random()) 
-//         console.log("This is the shuffle");
-//     }
-// }
+function shuffleCards () {
+    for (let i = 0; i < 250; i++) { // should console anything put in the console log said times
+        // let randomCards = Math.floor(Math.random()) 
+        console.log("250 250 times");
+    }
+}
 
-// shuffle();
+shuffleCards();
 
 // players (should include whose turn it is)
 
