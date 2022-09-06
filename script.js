@@ -18,62 +18,71 @@ How I want the game to be structured: <--- add to this if you more comes to mind
 
 Code to implement:
 
-- a shuffling function
-- a function for the whole deck of cards
-- players
-- a function for the buttons and actions to match
-- card images in HTML 
-- figure out a way to center everything (done)
-
-Created concepts:
-
-- buttons created
-- card values
+- a shuffling function (WORK IN PROGRESS)
+- a function for the whole deck of cards (DONE)
+- players (WORK IN PROGRESS)
+- a function for the buttons and actions to match (WORK IN PROGRESS)
+- card images in HTML (DONE - in cards folder)
+- figure out a way to center everything (DONE/WORK IN PROGRESS)- still trying to figure out how to position where the score is going to be elsewhere)
 
 
 Source help (while using only concepts learned from class):
 https://stackoverflow.com/questions/58473137/how-to-change-add-image-via-js-dom-in-blackjack-game
-https://stackoverflow.com/questions/27029157/how-to-center-align-script#:~:text=For%20text%20centering%20use%3A,using%20styles%20applied%20by%20javascript.
+https://stackoverflow.com/questions/27029157/how-to-center -align-script#:~:text=For%20text%20centering%20use%3A,using%20styles%20applied%20by%20javascript.
+https://github.com/ImKennyYip/black-jack/tree/master/cards (for card images)
 
 
 */
 
-// card values
+// PLAYERS RULESETS
 
-const cardValues = ["2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K", "A"]
-const suits = ["Spades", "Hearts", "Clubs", "Diamonds"]
-deck = []
+// let playerOneHit = true;
+// let playerTwoHit = true;
+// let playerOneStay = true;
+// let playerTwoStay = true;
 
-let cardImages = []
 
+// SCORE OF PLAYERS
+// let playerOne =
+// let playerTwo =
 
-// deck of cards (52)
-function fullDeck () {
+// DECK OF CARDS
 
+function fullDeck() {
+    let cardValues = ["2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K", "A"];
+    let suits = ["Spades", "Hearts", "Clubs", "Diamonds"];
+    let deck = [];
+
+    for (let i = 0; i < cardValues.length; i++) {
+        for (let j = 0; suits.length; j++) {
+            deck.push(cardValues[i] + "of" + suits[j]);
+        }
+    }
+    console.log(deck);
 }
 
 
-// function to shuffle deck of cards
+// SHUFFLE CARDS FUNCTION
 
 function shuffleCards () {
     for (let i = 0; i < 250; i++) { // should console anything put in the console log said times
-        // let randomCards = Math.floor(Math.random()) 
+        let randomCards = Math.floor(Math.random() * deck.length) // should select a random card within deck (52) to supply
         console.log("250 250 times");
     }
 }
 
 shuffleCards();
 
-// players (should include whose turn it is)
+// BUTTONS (Hit, Stay, and Restart)
 
+// function stay() {
 
+// }
 
-// buttons (Hit, Stay, and Restart)
+// function stay() {
 
+// }
 
+// function restart() {
 
-// Score of players
-// let score = "something"
-
-
-console.log();
+// }

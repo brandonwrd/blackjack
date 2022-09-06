@@ -9,25 +9,35 @@
 </head>
 <body>
     <h1>Blackjack</h1>
+    <!-- <h6>By: Brandon Ward (If this doesn't work, then it wasn't made my me)</h6> -->
 
+    <br>
+    <br>
+    <h2>Player 1: <span id ="playerOneScore"></span></h2> 
     <div id="playerOneCards">
         <img src="./cards/A-C.png">
         <img src="./cards/10-C.png">
     </div>
-
+    
+    <br>
+    <br>
+    <h2>Player 2: <span id ="playerTwoScore"></span></h2>
     <div id="playerTwoCards">
         <img src="./cards/Q-C.png">
         <img src="./cards/2-H.png">
     </div>
 
-    <div id="gameDiv">
-        <h2 class="gameText" id="playerOneScore">Player 1: </h2>
-        <h2 class="gameText" id="playerTwoScore">Player 2: </h2>
+    <h2>Dealer: <span id ="dealerCards"></span></h2>
+    <div id="deckOfCards">
+        <img id="hidden" src="./cards/BACK.png">
+    </div>
 
+
+    <div id="gameDiv">
         <br>
-        <button class="button" id="hit-button">Hit</button>
-        <button class="button" id="stay-button">Stay</button>
-        <button class="button" id="restart-button">Restart</button>
+        <button id="hit-button">Hit</button>
+        <button id="stay-button">Stay</button>
+        <button id="restart-button">Restart</button>
     </div>
 
     
