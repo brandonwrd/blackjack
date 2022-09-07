@@ -25,12 +25,15 @@ Code to implement:
 - card images in HTML (DONE - in cards folder)
 - figure out a way to center everything (DONE/WORK IN PROGRESS)- still trying to figure out how to position where the score is going to be elsewhere)
 
+What I want to figure out:
+
+- how to add text to the side of the images
+- how to move the dealer stack wherever i want
 
 Source help (while using only concepts learned from class):
 https://stackoverflow.com/questions/58473137/how-to-change-add-image-via-js-dom-in-blackjack-game
 https://stackoverflow.com/questions/27029157/how-to-center -align-script#:~:text=For%20text%20centering%20use%3A,using%20styles%20applied%20by%20javascript.
 https://github.com/ImKennyYip/black-jack/tree/master/cards (for card images)
-
 
 */
 
@@ -48,41 +51,48 @@ https://github.com/ImKennyYip/black-jack/tree/master/cards (for card images)
 
 // DECK OF CARDS
 
+let deck;
+
 function fullDeck() {
     let cardValues = ["2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K", "A"];
     let suits = ["Spades", "Hearts", "Clubs", "Diamonds"];
-    let deck = [];
+    deck = [];
 
     for (let i = 0; i < cardValues.length; i++) {
-        for (let j = 0; suits.length; j++) {
-            deck.push(cardValues[i] + "of" + suits[j]);
+        for (let j = 0; j < suits.length; j++) {
+            deck.push(cardValues[i] + " of " + suits[j]);
         }
     }
-    console.log(deck);
+    console.log(deck); // ex: "2 of Diamonds, 6 of Clubs, 9 of Hearts, etc."
 }
+
+fullDeck();
 
 
 // SHUFFLE CARDS FUNCTION
 
-function shuffleCards () {
-    for (let i = 0; i < 250; i++) { // should console anything put in the console log said times
-        let randomCards = Math.floor(Math.random() * deck.length) // should select a random card within deck (52) to supply
-        console.log("250 250 times");
+function shuffle() {
+    for (let i = 0; i < 2; i++) { // should console anything put in the console log said times
+        let randomCards = Math.floor(Math.random() * deck.length)  // should select a random card within deck (52) to supply
     }
+    console.log(randomCards);
 }
 
-shuffleCards();
+shuffle();
 
 // BUTTONS (Hit, Stay, and Restart)
 
-// function stay() {
+function hit() {
+    // if score of player one or two is less than 21, but wants to try to get the highest score without going over 21, then give them the option to hit
+    
 
-// }
+}
 
-// function stay() {
+function stay() {
+    // if score of player one or two is less than 21 and they don't want to go over 21, then give them the option to stay at that number
+    
+}
 
-// }
-
-// function restart() {
-
-// }
+function restart() {
+    // if player one or player two wins, press restart button to go again
+}
