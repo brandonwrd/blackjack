@@ -32,9 +32,9 @@ function getValue(dealerDeck) {
         if (value == "A") {
             return 11;
         }
-        return 10; // if not 11 it is a K,Q,J 
+        return 10; // if not 11 it is a K,Q, or J 
     } 
-    return parseInt(value); // if not KQJA it will find a random number within the deck
+    return parseInt(value); // if not KQJA it will find a random number within the deck; https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseInt
 
 }
 // FUNCTION TO CHECK ACES
@@ -83,10 +83,10 @@ function playBlackjack() {
     for (let i = 0; i < 2; i++) {
         let cardImages = document.createElement("img");
         let card = deck.pop();
-        cardImages.src = "./cards/" + card + ".png";
+        cardImages.src = "./cards/" + card + ".png"; 
         playerSco += getValue(card);
         playerAces += checkForAces(card);
-        document.getElementById("playerCards").append(cardImages);
+        document.getElementById("playerCards").append(cardImages); 
     }
     console.log(playerSco);
     document.getElementById("hit-button").addEventListener("click", hit);
@@ -99,8 +99,8 @@ function playBlackjack() {
 
 }
 
-// BUTTONS (HIT, STAY, and RESTART AND WHAT YOU WANT TO APPEAR ON THE SCREEN TO SHOW OUTCOMES)
-function hit() {  // if score of player one or two is less than 21, but wants to try to get the highest score without going over 21, then give them the option to hit
+// BUTTONS (HIT, and STAY FUNCTIONS - AND THE OUTCOMES YOU WANT TO DISPLAY ON THE SCREEN 
+function hit() {  // if score is less than 21 and you feel like you won't go over
     if(!playerCanHit) {
         return;
     }
@@ -117,7 +117,7 @@ function hit() {  // if score of player one or two is less than 21, but wants to
     
 }
 
-function stay() { // if score of player one or two is less than 21 and they don't want to go over 21, then give them the option to stay at that number
+function stay() { // if your score is less than 21 and you don't want to go over 21
     dealerSco = reduceAce(dealerSco, dealerAces);
     playerSco = reduceAce(playerSco, playerAces);
 
@@ -146,10 +146,6 @@ function stay() { // if score of player one or two is less than 21 and they don'
     document.getElementById("finalOutcome").innerHTML = outcome;
     
     
-}
-
-function restart() { // if player one or player two wins, press restart button to go again
-    window.onload();
 }
 
 

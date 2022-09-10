@@ -38,4 +38,5 @@ Source help (entered in some comments within js file as well):
 - https://github.com/ImKennyYip/black-jack/tree/master/cards (for card images)
 - https://stackoverflow.com/questions/17219757/how-to-place-text-and-an-image-next-to-each-other-in-html
 - https://www.w3schools.com/jsref/jsref_isnan.asp
-- https://developer.mozilla.org/en-US/docs/Web/API/Element/append (grabbing card values with from card images)
+- https://developer.mozilla.org/en-US/docs/Web/API/Element/append (grabbing card values from card images)
+- //https://www.w3schools.com/css/css_dimension.asp (resizing cards)
