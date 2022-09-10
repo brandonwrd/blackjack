@@ -5,8 +5,8 @@ BLACKJACK - The Game
 How I want the game to be structured: <--- add to this if you more comes to mind
 
 - random 2 cards revealed for player 1
-- random 2 cards revealed for player 2
-- the rest of the deck faced down
+- random 2 cards revealed for player 2 or computer
+- the rest of the deck faced down (dealer cards)
 - have the deck choose random cards to give players
 - ace card = 1 or 11
 - a button to "hit" or "stay" when prompted for each player
@@ -29,8 +29,11 @@ What I want to figure out:
 - how to add text to the side of the images
 - how to move the dealer stack wherever i want
 - a start game function
+- whether or not you want the game to be between player 1 and player two or player 1 vs computer
 
 Source help (while using only concepts learned from class):
-https://stackoverflow.com/questions/58473137/how-to-change-add-image-via-js-dom-in-blackjack-game
-https://stackoverflow.com/questions/27029157/how-to-center -align-script#:~:text=For%20text%20centering%20use%3A,using%20styles%20applied%20by%20javascript.
-https://github.com/ImKennyYip/black-jack/tree/master/cards (for card images)
+- https://stackoverflow.com/questions/58473137/how-to-change-add-image-via-js-dom-in-blackjack-game
+- https://stackoverflow.com/questions/27029157/how-to-center-align-script#:~:text=For%20text%20centering%20use%3A,using%20styles%20applied%20by%20javascript.
+- https://github.com/ImKennyYip/black-jack/tree/master/cards (for card images)
+- https://stackoverflow.com/questions/17219757/how-to-place-text-and-an-image-next-to-each-other-in-html
+- https://www.w3schools.com/jsref/jsref_isnan.asp
